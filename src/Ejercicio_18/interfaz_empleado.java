@@ -49,13 +49,13 @@ public class interfaz_empleado extends javax.swing.JFrame {
         btnCalcular = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(457, 400));
 
         jPanel3.setBackground(new java.awt.Color(226, 243, 233));
 
         txtHoras.setBackground(new java.awt.Color(206, 222, 220));
         txtHoras.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtHoras.setForeground(new java.awt.Color(81, 125, 119));
+        txtHoras.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtHoras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHorasActionPerformed(evt);
@@ -65,6 +65,7 @@ public class interfaz_empleado extends javax.swing.JFrame {
         txtRetencion.setBackground(new java.awt.Color(206, 222, 220));
         txtRetencion.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtRetencion.setForeground(new java.awt.Color(81, 125, 119));
+        txtRetencion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtRetencion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRetencionActionPerformed(evt);
@@ -74,6 +75,7 @@ public class interfaz_empleado extends javax.swing.JFrame {
         txtCodigo.setBackground(new java.awt.Color(206, 222, 220));
         txtCodigo.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtCodigo.setForeground(new java.awt.Color(81, 125, 119));
+        txtCodigo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCodigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCodigoActionPerformed(evt);
@@ -81,8 +83,9 @@ public class interfaz_empleado extends javax.swing.JFrame {
         });
 
         txtSalarioNeto.setBackground(new java.awt.Color(206, 222, 220));
-        txtSalarioNeto.setFont(new java.awt.Font("Berlin Sans FB", 0, 10)); // NOI18N
+        txtSalarioNeto.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtSalarioNeto.setForeground(new java.awt.Color(81, 125, 119));
+        txtSalarioNeto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtSalarioNeto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSalarioNetoActionPerformed(evt);
@@ -156,8 +159,9 @@ public class interfaz_empleado extends javax.swing.JFrame {
         jLabel5.setText("Porcentaje retención fuente:");
 
         txtSalarioBruto.setBackground(new java.awt.Color(206, 222, 220));
-        txtSalarioBruto.setFont(new java.awt.Font("Berlin Sans FB", 0, 10)); // NOI18N
+        txtSalarioBruto.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtSalarioBruto.setForeground(new java.awt.Color(81, 125, 119));
+        txtSalarioBruto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtSalarioBruto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSalarioBrutoActionPerformed(evt);
@@ -173,6 +177,7 @@ public class interfaz_empleado extends javax.swing.JFrame {
         txtNombre.setBackground(new java.awt.Color(206, 222, 220));
         txtNombre.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtNombre.setForeground(new java.awt.Color(81, 125, 119));
+        txtNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombreActionPerformed(evt);
@@ -182,6 +187,7 @@ public class interfaz_empleado extends javax.swing.JFrame {
         txtValor.setBackground(new java.awt.Color(206, 222, 220));
         txtValor.setFont(new java.awt.Font("Berlin Sans FB", 0, 13)); // NOI18N
         txtValor.setForeground(new java.awt.Color(81, 125, 119));
+        txtValor.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtValor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtValorActionPerformed(evt);
@@ -240,19 +246,20 @@ public class interfaz_empleado extends javax.swing.JFrame {
                         .addGap(64, 64, 64)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(6, 6, 6)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(txtCodigoR, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtNombreR, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtCodigoR, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombreR, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtSalarioBruto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtSalarioNeto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtSalarioNeto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSalarioBruto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -304,11 +311,11 @@ public class interfaz_empleado extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(txtSalarioBruto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(txtSalarioNeto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                    .addComponent(txtSalarioNeto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -323,8 +330,8 @@ public class interfaz_empleado extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -380,8 +387,8 @@ public class interfaz_empleado extends javax.swing.JFrame {
         double salarioBruto = empleado.calcularSalarioBruto();
         double salarioNeto = empleado.calcularSalarioNeto();
 
-        txtSalarioBruto.setText(String.format("%.2f", salarioBruto));
-        txtSalarioNeto.setText(String.format("%.2f", salarioNeto));
+        txtSalarioBruto.setText("$"+ String.format("%.2f", salarioBruto));
+        txtSalarioNeto.setText("$" + String.format("%.2f", salarioNeto));
         txtCodigoR.setText(codigo);
         txtNombreR.setText(nombres);
 
